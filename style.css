@@ -1,0 +1,101 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+h1 {
+  font-family: "Fugaz One", cursive;
+}
+
+header,
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+#todoContainer {
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 2px solid black; */
+  width: 400px;
+  height: auto;
+  padding: 10px 10px 10px 10px;
+}
+
+#inputBox {
+  width: 400px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+#addBtn {
+  width: 30px;
+  height: 29px;
+  border-radius: 5px;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+#addBtn:focus {
+  outline: none;
+}
+
+#inputBox:focus {
+  outline: none;
+}
+
+#addBtn:active {
+  transform: scale(0.8);
+}
+
+#todoList {
+  list-style: none;
+  text-align: center;
+}
+
+#todoList i {
+  font-size: 16px;
+}
+
+#todoList button {
+  width: 30px;
+  height: 29px;
+  border-radius: 5px;
+  transition: 300ms;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+}
+
+#todoList button:focus {
+  outline: none;
+}
+
+#todoList button:active {
+  transform: scale(0.8);
+}
+
+.tododiv {
+  justify-content: space-between;
+  display: flex;
+  transition: 0.5s;
+}
+
+.todoLi {
+  flex: 1;
+  padding: 7px;
+  width: 95%;
+  height: 10px;
+  border: 2px solid black;
+  margin: 2px auto;
+  text-align: left;
+  border-radius: 5px;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
